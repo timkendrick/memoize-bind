@@ -1,0 +1,46 @@
+{
+  "name": "memoize-bind",
+  "version": "0.0.1",
+  "description": "Memoized function binding",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "test": "eslint index.js test lib && mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timkendrick/memoize-bind.git"
+  },
+  "keywords": [
+    "bind",
+    "function",
+    "memoize",
+    "weak",
+    "weakmap",
+    "garbage"
+  ],
+  "author": "Tim Kendrick <timkendrick@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timkendrick/memoize-bind/issues"
+  },
+  "homepage": "https://github.com/timkendrick/memoize-bind#readme",
+  "dependencies": {
+    "memoize-weak": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.10.0",
+    "eslint-config-airbnb-base": "^10.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.0.0",
+    "sinon": "^1.0.0"
+  }
+}
