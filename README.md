@@ -42,7 +42,7 @@ boundFn('qux'); // Returns ['foo', 'bar', 'baz', 'qux']
 
 ## Why `memoize-bind`?
 
-[`Function.prototype.bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)` is often used within React components, where callbacks need to be bound to the current component instance (optionally with arguments pre-applied).
+[`Function.prototype.bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) is often used within React components, where callbacks need to be bound to the current component instance (optionally with arguments pre-applied).
 
 While convenient, using `.bind()` within a render function can be problematic for React's dirty-checking algorithm, seeing as a new function instance would be returned on each render, leaving the React reconciler unable to tell that two functions generated during subsequent renders are indeed identical.
 
