@@ -15,7 +15,7 @@ This ensures that calling `memoize-bind` repeatedly with the same arguments will
 npm install memoize-bind
 ```
 
-## Usage
+## Usage
 
 ### `bind(fn, [context], [...args])`
 
@@ -23,14 +23,14 @@ Create a new function that, when called, will invoke `fn` with the `this` keywor
 
 If any `args` are specified, they will be prepended to the list of arguments supplied when calling the newly-created function.
 
-## Example
+## Example
 
 ```js
 import bind from 'memoize-bind';
 import assert from 'assert';
 
 const context = { name: 'foo' };
-const fn = (...args) => [this.name, ...args];
+const fn = function(...args) { return [this.name, ...args]; };
 const args = ['bar', 'baz']
 
 const boundFn = bind(fn, context, ...args); // Identical to fn.bind(context, ...args)
