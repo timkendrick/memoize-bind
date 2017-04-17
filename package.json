@@ -1,6 +1,6 @@
 {
   "name": "memoize-bind",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Memoized function binding",
   "main": "index.js",
   "directories": {
